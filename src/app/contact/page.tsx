@@ -19,7 +19,7 @@ export default function ContactPage() {
           <p>
             Prefer email?{" "}
             <a
-              href="mailto:hello@sunlitpath.com"
+              href="mailto:yo.fujimoto7@gmail.com"
               className="underline hover:text-[#ff6b35]"
             >
               hello@sunlitpath.com
