@@ -1,3 +1,0 @@
-:HL["/_next/static/chunks/6474597eb919b8be.css","style"]
-:HL["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css","style",{"crossOrigin":"anonymous","integrity":"sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==","referrerPolicy":"no-referrer"}]
-0:{"buildId":"0s9OniT1ssbFXNK55VTX5","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"/_not-found","paramType":null,"paramKey":"/_not-found","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
