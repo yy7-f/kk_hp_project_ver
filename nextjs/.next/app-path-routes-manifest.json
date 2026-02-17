@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/apps/japanese/page": "/apps/japanese",
+  "/apps/math/page": "/apps/math",
+  "/apps/meditation/page": "/apps/meditation",
+  "/apps/page": "/apps",
+  "/apps/spanish/page": "/apps/spanish",
+  "/apps/typing/page": "/apps/typing",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/"
+}

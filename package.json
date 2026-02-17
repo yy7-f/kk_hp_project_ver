@@ -1,18 +1,26 @@
 {
-  "name": "sunlitpath-homepage",
-  "version": "1.0.0",
-  "description": "SunlitPath Inc. Company Homepage",
-  "main": "index.html",
+  "name": "nextjs",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "npx live-server . --port=3000 --open",
-    "start": "npx live-server . --port=3000",
-    "build": "echo 'No build step required for static site'",
-    "preview": "npx live-server . --port=4173 --open"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "keywords": ["sunlitpath", "homepage", "company"],
-  "author": "Yo Fujimoto",
-  "license": "MIT",
+  "dependencies": {
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
