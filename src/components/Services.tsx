@@ -3,6 +3,41 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 
+const featuredApps = [
+  {
+    slug: "japanese",
+    title: "Japanese Learning Path",
+    description:
+      "Structured flashcard practice through hiragana, katakana, and kanji from JLPT N5 to N1.",
+    icon: "fa-language",
+    categories: ["Education"],
+  },
+  {
+    slug: "math",
+    title: "Math Quest",
+    description:
+      "Problem-solving challenges across arithmetic, fractions, and algebra, with 16 zones to progress through.",
+    icon: "fa-calculator",
+    categories: ["Education"],
+  },
+  {
+    slug: "typing",
+    title: "Typing Quest",
+    description:
+      "Build typing speed and accuracy using real passages from books, speeches, philosophy, and film.",
+    icon: "fa-keyboard",
+    categories: ["Education", "Productivity & Focus"],
+  },
+  {
+    slug: "meditation",
+    title: "MindPeace",
+    description:
+      "Guided meditation from 1 to 30 minutes, with multiple techniques for all levels of experience.",
+    icon: "fa-spa",
+    categories: ["Wellbeing & Reflection", "Productivity & Focus"],
+  },
+];
+
 const services = [
   {
     icon: "fa-seedling",
@@ -113,6 +148,35 @@ export default function Services() {
               )}
             </div>
           ))}
+        </div>
+
+        {/* Featured Apps */}
+        <div className="mt-16 pt-12 border-t border-[#e9ecef]">
+          <h3 className="text-xs font-semibold text-[#7f8c8d] uppercase tracking-widest mb-6">
+            Featured Apps
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {featuredApps.map((app, index) => (
+              <Link
+                key={index}
+                href={`/apps/${app.slug}`}
+                className="fade-in-up group block bg-[#f8f9fa] rounded-xl p-5 no-underline transition-all duration-200 hover:bg-white hover:shadow-medium hover:-translate-y-0.5"
+              >
+                <div className="w-8 h-8 rounded-lg bg-gradient-sunset flex items-center justify-center mb-4">
+                  <i className={`fas ${app.icon} text-white text-sm`}></i>
+                </div>
+                <h4 className="text-[15px] font-semibold text-[#2c3e50] mb-1 group-hover:text-[#ff6b35] transition-colors leading-snug">
+                  {app.title}
+                </h4>
+                <p className="text-[10px] font-semibold text-[#ff6b35] uppercase tracking-wider mb-2">
+                  {app.categories.join(" · ")}
+                </p>
+                <p className="text-xs text-[#7f8c8d] leading-relaxed">
+                  {app.description}
+                </p>
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* View All Apps Button */}

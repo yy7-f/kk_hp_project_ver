@@ -79,10 +79,10 @@ export default function Footer() {
             <ul className="space-y-2 list-none p-0">
               <li>
                 <a
-                  href="mailto:hello@sunlitpath.com"
+                  href="mailto:yo.fujimoto7@gmail.com"
                   className="text-[#bdc3c7] hover:text-[#ffd23f] transition-colors duration-300 no-underline"
                 >
-                  hello@sunlitpath.com
+                  yo.fujimoto7@gmail.com
                 </a>
               </li>
               <li className="text-[#bdc3c7]">Tokyo, Japan</li>

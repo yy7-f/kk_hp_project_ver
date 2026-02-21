@@ -63,31 +63,6 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Company Info */}
           <div className="bg-white p-8 rounded-xl shadow-medium">
-            <div className="mb-6">
-              <div className="grid grid-cols-3 gap-4 mb-6 text-center">
-                <div>
-                  <p className="text-sm text-[#7f8c8d] uppercase tracking-wide">
-                    Project started
-                  </p>
-                  <p className="text-2xl font-bold text-[#2c3e50]">2025</p>
-                </div>
-                <div>
-                  <p className="text-sm text-[#7f8c8d] uppercase tracking-wide">
-                    Created by
-                  </p>
-                  <p className="text-2xl font-bold text-[#2c3e50]">
-                    Yo Fujimoto
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm text-[#7f8c8d] uppercase tracking-wide">
-                    Based in
-                  </p>
-                  <p className="text-2xl font-bold text-[#2c3e50]">Tokyo</p>
-                </div>
-              </div>
-            </div>
-
             <p className="text-[#7f8c8d] leading-relaxed">
               SunlitPath is an educational project building practical apps for
               language learning, math practice, typing skills, and mindfulness
@@ -107,24 +82,41 @@ export default function About() {
             </p>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-light text-center">
-              <div className="text-4xl font-bold gradient-text mb-2">{count}</div>
-              <p className="text-sm text-[#7f8c8d] uppercase tracking-wide">
-                Year started
+          {/* Pillars */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-xl shadow-light">
+              <div className="text-3xl mb-3" aria-hidden="true">
+                🌍
+              </div>
+              <h3 className="text-base font-bold text-[#2c3e50]">
+                Global Access
+              </h3>
+              <p className="mt-2 text-sm text-[#7f8c8d] leading-relaxed">
+                Tools designed beyond borders
               </p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-light text-center">
-              <div className="text-4xl font-bold gradient-text mb-2">∞</div>
-              <p className="text-sm text-[#7f8c8d] uppercase tracking-wide">
-                Iterations
+
+            <div className="bg-white p-6 rounded-xl shadow-light">
+              <div className="text-3xl mb-3" aria-hidden="true">
+                🌱
+              </div>
+              <h3 className="text-base font-bold text-[#2c3e50]">
+                Sustainable Growth
+              </h3>
+              <p className="mt-2 text-sm text-[#7f8c8d] leading-relaxed">
+                Slow, steady progress that compounds
               </p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-light text-center">
-              <div className="text-4xl font-bold gradient-text mb-2">🌍</div>
-              <p className="text-sm text-[#7f8c8d] uppercase tracking-wide">
-                Global Perspective
+
+            <div className="bg-white p-6 rounded-xl shadow-light">
+              <div className="text-3xl mb-3" aria-hidden="true">
+                📚
+              </div>
+              <h3 className="text-base font-bold text-[#2c3e50]">
+                Learning by Doing
+              </h3>
+              <p className="mt-2 text-sm text-[#7f8c8d] leading-relaxed">
+                Daily practice over passive study
               </p>
             </div>
           </div>

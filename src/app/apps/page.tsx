@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { NativeBannerAd } from "@/components/ads/NativeBannerAd";
+import { Banner300x250Ad } from "@/components/ads/Banner300x250Ad";
 
 const apps = [
   {
@@ -56,6 +58,14 @@ const apps = [
 export default function AppsPage() {
   return (
     <div className="min-h-screen bg-white">
+      {/* Top Ad Zone */}
+      <div className="bg-[#f8f9fa] border-b border-[#e9ecef] py-2 flex justify-center items-center min-h-[60px]">
+        {/* Desktop: native banner (full width) */}
+        <NativeBannerAd className="hidden md:block w-full" />
+        {/* Mobile: 300x250 */}
+        <Banner300x250Ad className="block md:hidden mx-auto" />
+      </div>
+
       {/* Header */}
       <header className="bg-gradient-soft border-b border-[#e9ecef]">
         <div className="max-w-[1200px] mx-auto px-4 py-12 md:py-20">
@@ -118,6 +128,11 @@ export default function AppsPage() {
           ))}
         </div>
       </main>
+
+      {/* Bottom Ad Zone - both desktop and mobile */}
+      <div className="bg-[#f8f9fa] border-t border-[#e9ecef] py-6 flex justify-center items-center">
+        <Banner300x250Ad className="mx-auto" />
+      </div>
     </div>
   );
 }

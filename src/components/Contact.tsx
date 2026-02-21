@@ -6,12 +6,12 @@ const contactInfo = [
   {
     icon: "fa-envelope",
     label: "Email",
-    value: "hello@sunlitpath.com",
+    value: "yo.fujimoto7@gmail.com",
   },
   {
     icon: "fa-globe",
     label: "Website",
-    value: "sunlitpath.com",
+    value: "https://sunlit-path.com",
   },
   {
     icon: "fa-map-marker-alt",
@@ -19,9 +19,9 @@ const contactInfo = [
     value: "Tokyo, Japan",
   },
   {
-    icon: "fa-clock",
-    label: "Timezone",
-    value: "Japan Standard Time (JST)",
+    icon: "fa-user",
+    label: "Built by",
+    value: "Yo Fujimoto",
   },
 ];
 
@@ -35,6 +35,11 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const subject = encodeURIComponent(`Message from ${formData.name}`);
+    const body = encodeURIComponent(
+      `${formData.message}\n\n---\nFrom: ${formData.name} (${formData.email})`
+    );
+    window.location.href = `mailto:yo.fujimoto7@gmail.com?subject=${subject}&body=${body}`;
     setIsSubmitted(true);
   };
 
